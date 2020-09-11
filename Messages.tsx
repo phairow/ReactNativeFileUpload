@@ -41,7 +41,7 @@ export function Messages() {
       <ScrollView
         style={styles.MessagesList}  
         ref={ref => {messageList = ref}}
-        onContentSizeChange={() => messageList ? messageList.scrollToEnd({animated: true}): undefined}
+        onContentSizeChange={() => messageList ? messageList.scrollToEnd(): undefined}
       >
         { messages.length > 0 ?
           <View>

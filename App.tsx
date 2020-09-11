@@ -19,6 +19,7 @@ export default function App() {
       <ScrollView style={styles.Scroll}>
         <View style={styles.App}>
           <Messages />
+          <View style={styles.Separator}></View>
           <FileUpload />
         </View>
       </ScrollView>
@@ -38,5 +39,8 @@ const styles = StyleSheet.create({
   App: {
     backgroundColor: 'lightgrey',
     marginBottom: 80
+  },
+  Separator: {
+    height: 40
   }
 });
